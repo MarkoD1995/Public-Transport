@@ -10,6 +10,7 @@ export class TransportController {
     *  A route for calculating transport time between two places.
     */
     public static async calculateTransportTime(request: Request, response: Response): Promise<any> {
+        console.log('usao u metodu');
 
         const axios: Axios = require('axios').default;
         try {
