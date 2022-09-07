@@ -25,7 +25,7 @@ export class TransportController {
                     }
                 }
                 const responseFromApi = await axios.get(url, data);
-
+                console.log(responseFromApi.data.connections)
                 filteredTransportData = transportService.filterTransportData(responseFromApi.data.connections);
             } catch (error) {
                 console.error(error);
